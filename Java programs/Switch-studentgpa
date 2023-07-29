@@ -1,0 +1,19 @@
+package com.krishna;
+
+import java.util.Scanner;
+
+public class studentgpa {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String student = input.next();
+
+        switch (student) {
+            case "raju"-> System.out.println(8.2);
+            case "charan"-> System.out.println(9.5);
+            case "joy koushik"-> System.out.println(8.5);
+            case "sai krishna" -> System.out.println(9.7);
+            case "solman"-> System.out.println(8.2);
+            default -> System.out.println("enter a valid name ");
+        }
+    }
+}
