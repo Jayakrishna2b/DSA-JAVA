@@ -1,0 +1,49 @@
+package com.krishna;
+
+import java.util.Scanner;
+
+public classpackage com.krishna;
+
+import java.util.Scanner;
+
+public class nestedswitch {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int student = input.nextInt();
+       String branch = input.next();
+
+        switch (branch) {
+            case "Data science" -> System.out.println("raju");
+            case "mech" -> System.out.println("uday");
+            case "cse" -> {
+                switch (student) {
+                    case 1 -> System.out.println("joy");
+                    case 2 -> System.out.println("koushik");
+                    default -> System.out.println("enter a valid name ");
+                }
+            }
+            default -> System.out.println("enter valid name");
+        }
+
+    }
+} {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int student = input.nextInt();
+       String branch = input.next();
+
+        switch (branch) {
+            case "Data science" -> System.out.println("raju");
+            case "mech" -> System.out.println("uday");
+            case "cse" -> {
+                switch (student) {
+                    case 1 -> System.out.println("joy");
+                    case 2 -> System.out.println("koushik");
+                    default -> System.out.println("enter a valid name ");
+                }
+            }
+            default -> System.out.println("enter valid name");
+        }
+
+    }
+}
