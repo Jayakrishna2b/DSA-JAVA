@@ -1,1 +1,10 @@
+package com.krishna;
 
+public class greeting {
+    public static void main(String[] args) {
+        greeting();
+    }
+    static void greeting() {
+        System.out.println("nice to meet you");
+    }
+}
