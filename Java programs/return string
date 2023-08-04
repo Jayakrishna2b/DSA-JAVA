@@ -1,0 +1,15 @@
+package com.krishna;
+
+class string {
+    public static void main(String[] args) {
+        string message = goa();
+        System.out.println(message);
+
+    }
+    static string goa() {
+        String goa = "Beach" ;
+        return goa();
+
+
+    }
+}
