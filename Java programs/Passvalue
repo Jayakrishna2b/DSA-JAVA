@@ -1,0 +1,12 @@
+package com.krishna;
+
+public class passvalue {
+    public static void main(String[] args) {
+        String subject = "operating system";
+        greet(subject);
+    }
+
+    private static void greet(String subject) {
+        System.out.println(subject);
+    }
+}
