@@ -1,0 +1,15 @@
+package com.krishna;
+
+public class shadowing {
+    static int n = 89;
+
+    public static void main(String[] args) {
+        System.out.println(n);
+        int n = 96;
+        System.out.println(n);
+        krishna();
+    }
+    static void krishna(){
+        System.out.println(n);
+    }
+}
