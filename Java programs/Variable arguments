@@ -1,1 +1,16 @@
+package com.krishna;
 
+public class vargs {
+    public static void main(String[] args) {
+        multiple(43, b:78 , ...v:"raju" , "joy" , "krishna");
+    }
+    static void multiple(int a,int b,string...v){
+
+    }
+
+    static void raju(int ...v);{
+        System.out.println(Arrays.tostring(v));
+    }
+
+
+}
