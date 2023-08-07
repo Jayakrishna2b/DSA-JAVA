@@ -1,1 +1,15 @@
+package com.krishna;
 
+public class overeloading {
+    public static void main(String[] args) {
+        sec(45);
+        sec("joy");
+    }
+    static void sec(int a){
+        System.out.println(a);
+    }
+
+    static void sec(String name){
+        System.out.println(name);
+    }
+}
