@@ -1,1 +1,15 @@
+package com.krishna;
 
+import java.util.Arrays;
+
+public class arraypassing {
+    public static void main(String[] args) {
+        int[] nums = {4203,4201,4202};
+        System.out.println(Arrays.toString(nums));
+        change(nums);
+        System.out.println(Arrays.toString(nums));
+    }
+    static void change(int[] arr) {
+        arr[1] =4018;
+    }
+}
