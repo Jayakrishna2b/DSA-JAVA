@@ -1,1 +1,25 @@
+package com.krishna;
 
+
+import java.util.AbstractList;
+import java.util.ArrayList;
+
+import java.util.Scanner;
+
+public class arraylist {
+    public static void main(String[] args) {
+        Scanner  in  = new Scanner(System.in);
+        AbstractList<Integer> list = new ArrayList<>(9);
+
+        list.add(3443);
+        list.add(3423);
+        list.add(34334);
+       list.add(4545);
+        list.add(2424);
+        list.add(9898);
+
+        System.out.println(list);
+        list.set(0,34);
+        System.out.println(list);
+    }
+}
