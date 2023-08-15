@@ -1,0 +1,16 @@
+package com.krishna;
+
+import java.util.Arrays;
+
+public class swaparray {
+    public static void main(String[] args) {
+        int[] arr ={54,63,93,23,74,26};
+        swap(arr,4,2);
+        System.out.println(Arrays.toString(arr));
+    }
+    static void swap(int[] arr,int index4, int index2){
+        int temp = arr[index4];
+        arr[index4]=arr[index2];
+        arr[index2]=temp;
+    }
+}
