@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
     public class stringsearch {
         public static void main(String[] args) {
             String name = "jaya Krishna";
@@ -10,7 +9,6 @@ import java.util.Arrays;
             if (str.length() == 0) {
                 return false;
             }
-
             for(char ch : str.toCharArray()) {
                 if (ch == target) {
                     return true;
