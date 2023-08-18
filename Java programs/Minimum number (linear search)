@@ -1,0 +1,15 @@
+public class Minimumnumber {
+    public static void main(String[] args) {
+        int[] arr ={98,89,88,34,3,2};
+        System.out.println(Minimumnumber(arr));
+    }
+    static int Minimumnumber(int[] arr){
+        int ans =arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if(arr[i] < ans){
+                ans=arr[i];
+            }
+        }
+        return ans;
+    }
+}
