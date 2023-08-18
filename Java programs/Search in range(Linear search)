@@ -1,21 +1,22 @@
 import java.lang.annotation.Target;
 
 public class rangesearch {
-        public static void main(String[] args) {
-            int[] arr = {90,99,96,97,86,88};
-            int target = 99;
-            System.out.println(linearSearch(arr, target, 1, 4));
+    public static void main(String[] args) {
+        int[] arr = {56,98,99,66,89,88,98};
+            int target = 89;
+            System.out.println(rangesearch(arr, target, 1, 5));
         }
-        static int linearSearch(int[] arr, int target, int start, int end) {
-            if (arr.length == 0) {
-                return -1;
+        static int rangesearch(int[] arr, int target, int start, int end) {
+            if(arr.length==0){
+            return -1;
             }
-            for (int index = start; index <= end; index++) {
+            for (int index = start; index <end ; index++) {
                 int element = arr[index];
-                if (element == target) {
+                if (element == target){
                     return index;
                 }
             }
             return -1;
+                
+            }
         }
-    }
