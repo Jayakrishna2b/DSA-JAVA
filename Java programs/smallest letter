@@ -1,0 +1,31 @@
+public class smallestletter {
+
+    public smallestletter(int target) {
+    }
+
+    public static void main(String[] args) {
+        char[] arr = {'h','k','p'};
+        char target = 'p';
+        char ans = smallestletter(char[] , char target);
+        System.out.println(ans);
+
+    }
+
+   
+        static int smallestletter(char[] arr, char target) {
+        int start = 0;
+        int end = start.length - 1;
+
+        while(start <= end) {
+
+            int mid = start + (end - start) / 2;
+
+            if (target < start[mid]) {
+                end = mid - 1;
+            } else {
+                start = mid + 1;
+            }
+        }
+        return start[start % start.length];
+    }
+}
