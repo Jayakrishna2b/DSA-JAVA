@@ -1,0 +1,24 @@
+public class searchInsert {
+    public static void main(String[] args) {
+        int[] arr={24,56,74,86,96};
+        int target=57;
+        int ans =  searchInsert(arr,target);
+        System.out.println(ans);
+    }
+    static int  searchInsert(int[] arr,int target){
+        int start = 0 ;
+        int end = arr.length-1;
+        while (start<=end){
+            int mid  = start + (end-start)/2;
+            if (arr[mid] == target) {
+                return mid;
+            }
+            if (arr[mid] < target) {
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
+        }
+        return start;
+    }
+}
